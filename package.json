@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "My project",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "lite-server": "^2.6.1"
+  }
+}

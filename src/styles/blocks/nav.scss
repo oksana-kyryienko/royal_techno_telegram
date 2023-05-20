@@ -1,0 +1,10 @@
+.nav {
+  background-color: #17a2b8;
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,47 @@
+@import "./blocks/utils/variables";
+@import "./blocks/grid.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/mixin";
+@import "./blocks/page.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/title.scss";
+@import "./blocks/text.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/form-field.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/price.scss";
+@import "./blocks/func.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/screen.scss";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #007bff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, p, ul, span {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  @include onDesktop {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+  }
+}

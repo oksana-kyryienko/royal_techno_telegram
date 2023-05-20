@@ -1,0 +1,43 @@
+.button {
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 17px 39px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+
+  &__container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.btn {
+  &__main {
+    border: none;
+  }
+  &__hover {
+    background: #007bff;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background: #fff;
+      color: #3f345f;
+    }
+  }
+}

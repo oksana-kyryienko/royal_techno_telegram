@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  align-items: center;
+
+  @include onDesktop {
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+
+  &__content {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+  }
+
+  &__opener {
+    &--icon {
+      width: 45px;
+      height: 45px;
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    @include onDesktop {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    color: #3f345f;
+    text-decoration: none;
+    background: #fff;
+    padding: 11px 21px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 80px;
+  }
+
+  &__link:not(.menu__btn) {
+    position: relative;
+    padding: 10px 7px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.5;
+    &::after {
+      box-sizing: border-box;
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:not(.menu__btn):hover::after {
+      opacity: 1;
+    }
+
+    @include onDesktop {
+      font-size: 13px;
+    }
+  }
+}
